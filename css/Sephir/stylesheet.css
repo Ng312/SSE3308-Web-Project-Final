@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sephir';
+    src: url('Sephir-Regular.eot');
+    src: url('Sephir-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Sephir-Regular.woff2') format('woff2'),
+        url('Sephir-Regular.woff') format('woff'),
+        url('Sephir-Regular.ttf') format('truetype'),
+        url('Sephir-Regular.svg#Sephir-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

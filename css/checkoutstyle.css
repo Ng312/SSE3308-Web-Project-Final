@@ -1,0 +1,113 @@
+.checkout_form {
+  padding: 50px;
+  margin: 150px auto;
+  width: 40%;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 20px rgba(54, 54, 54, 0.5);
+  border-radius: 20px;
+}
+.checkout_form {
+  h1{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+    }
+  h2{
+  font-size: 20px;
+  font-weight: 600;
+  }
+}
+
+.shipping_form, .payment_form, .bill_form {
+  margin: 30px 0;
+}
+.shipping_form {
+  margin: 10px 0;
+  padding-bottom:20px;
+  border-bottom: 2px solid #d6d6d6;
+  h2{
+    margin-bottom:20px;
+  }
+}
+.add_row {
+  display: flex;
+  justify-content: space-between;
+}
+.form_label {
+  margin: 0 20px 0 0;
+}
+.form-control {
+  margin-bottom: 10px;
+  border: none;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+    :focus::placeholder {
+    opacity: 50%;
+    }
+}
+.payment_form{
+  padding-bottom:20px;
+  border-bottom: 2px solid #d6d6d6;
+}
+.bill_form{
+  h2{
+  margin-bottom: 20px;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  tr{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .total{
+    font-weight: 600;
+  }
+  button{
+    background-color: #f1d59c;
+    border: none;
+    transition: 0.2s ease-in-out;
+  }
+  button:hover {
+    background-color: #e6b249;
+  }
+
+  .icon {
+    margin: 5px 0;
+    transform: translateX(-30px);
+    width: 30px;
+    height: 30px;
+  }
+}
+.hidden {
+  display: none;
+  background-color: #e6b249;
+}
+#ewallet-form{
+  .form_label{
+    margin-bottom:20px;
+  }
+  img{
+    width:40px;
+    margin:0 20px 20px 20px;
+  }
+}
+#print {
+  background:none;
+  border:none;
+  font-size:30px;
+  transform:translateX(470px);
+
+}
+@media print {
+  body * {
+    display: none;
+  }
+  #content, #content * {
+    display: block;
+  }
+}
+

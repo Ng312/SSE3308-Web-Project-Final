@@ -1,0 +1,240 @@
+#carousel {
+  padding: 0;
+  margin-top:80px;
+  overflow-x: hidden;
+}
+
+.first-carousel,.second-carousel,.third-carousel,.container,.product-card{
+  font-family:'RobotoSlab-Regular';
+}
+
+.first-carousel{
+  background-image:url("/img/bg.jpg");
+  height:600px;
+  background-size: cover;
+  position:relative;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.left-column {
+  margin-top:220px;
+  margin-left: 100px;
+}
+
+.left-column h2 {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.left-column p {
+  font-size: 25px;
+  margin-top: 30px;
+  color:#fffdeb
+}
+
+.column-right{
+  width:100%;
+  transform:translateY(100px);
+  filter: drop-shadow(-3px 33px 20px #000000);
+}
+.second-carousel,.third-carousel{
+  position:relative;
+  height: 600px;
+  text-align:center;
+}
+h3{
+  position:absolute;
+  top: 58%;
+  left:13%;
+  color:#ffffff;
+  font-size:40px;
+
+}
+
+.second-carousel button{
+  position:absolute;
+  bottom:20%;
+  left:46%;
+  filter: drop-shadow(2px 2px 5px #545454);
+}
+.third-carousel h4{
+  position:absolute;
+  top: 58%;
+  left:25%;
+  color:#ffffff;
+  font-size:40px;
+}
+.third-carousel button{
+  position:absolute;
+  bottom:20%;
+  left:46%;
+  filter: drop-shadow(2px 2px 5px #545454);
+}
+.carousel-inner{
+  filter: drop-shadow(0px 10px 10px #797979);
+}
+.attribute{
+  border: 2px solid ;
+  border-radius:20px;
+  padding:20px;
+}
+.attribute-container p{
+  margin-top:100px;
+  font-size:30px;
+}
+.attribute-container {
+  text-align: center;
+}
+
+.attribute-container img {
+  width:150px;
+  height: auto;
+}
+
+.attribute-container figcaption {
+  margin-top: 10px; 
+}
+
+/*Product cards*/
+.product-card {
+	display: flex;
+  justify-content: center;;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+.pcheader{
+  font-size:30px;
+  margin:50px 0;
+}
+.product-card .card {
+	position: relative;
+	width: 250px;
+	height: 300px;
+  margin:0 30px;
+	box-shadow: 0 15px 35px rgba(54, 54, 54, 0.5);
+  border: none;
+	border-radius: 15px;
+	display: flex;
+  background-color: #f1e2c5;
+  transition:0.3s ease-in-out;
+}
+
+.product-card .content {
+	position: relative;
+	display: flex;
+	align-items: center;
+  top:40px;
+	flex-direction: column;
+	transition:0.3s ease-in-out;
+}
+
+.product-card .card .content .imgBx {
+	position: relative;
+	width: 200px;
+	height: 160px;
+	overflow: hidden;
+}
+
+.product-card .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.product-card .card .content .contentBx h1 {
+	color: #000000;
+	letter-spacing: 1px;
+	font-size: 20px;
+	margin: 10px;
+}
+.sci p {
+  font-size:17px;
+}
+.product-card .card .sci {
+	position: absolute;
+	bottom: 2px;
+	display: flex;
+}
+
+.sci li {
+  color: #704216;
+	font-size: 20px;
+	list-style: none;
+	margin-top: 50px;
+  padding-right:20px;
+	transition:0.3s ease-in-out;
+	opacity: 0;
+}
+
+.card:hover{
+  height:450px;
+  background-color: #ecd5a9;
+  transition:0.3s ease-in-out;
+}
+.product-card .card:hover .sci li {
+	opacity: 1;
+  transition-delay: 0.1s;
+}
+
+.product-card button{
+  margin:70px;
+  border:none;
+  filter: drop-shadow(2px 2px 5px #545454);
+  &:hover{
+    background-color:#ffffff;
+    color:#000000;
+    transition: 0.3s;
+  }
+}
+.clock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.modal-content {
+  background-color: #ecd5a9;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; 
+  display: flex; /* Add this to make content and image side by side */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#modalImage img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  margin-bottom: 20px; /* Add some spacing between image and description */
+}

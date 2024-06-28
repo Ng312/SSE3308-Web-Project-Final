@@ -1,0 +1,289 @@
+[
+    {
+        "id": 1,
+        "name": "Smooth Peanut Butter",
+        "price": "RM20",
+        "image": "/img/peanut butter jar.png",
+        "description": "Experience the unparalleled richness of our Smooth Peanut Butter, crafted from the finest roasted peanuts to deliver a creamy, indulgent texture. Perfect for spreading on toast, or enjoying straight from the jar.",
+        "nutrition_facts": {
+            "ingredients": ["Peanuts", "Salt"],
+            "serving_size": "2 tbsp (32g)",
+            "calories": 180,
+            "total_fat": {
+                "value": 15,
+                "percent": 23
+            },
+            "cholesterol": {
+                "value": 0,
+                "percent": 0
+            },
+            "sodium": {
+                "value": 140,
+                "percent": 6
+            },
+            "total_carbohydrate": {
+                "value": 6,
+                "percent": 2
+            },
+            "dietary_fiber": {
+                "value": 2,
+                "percent": 8
+            },
+            "sugars": {
+                "value": 3,
+                "percent": 0
+            },
+            "protein": {
+                "value": 7,
+                "percent": 14
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "Chunky Peanut Butter",
+        "price": "RM21",
+        "image": "/img/peanut butter jar.png",
+        "description": "Our Chunky Peanut Butter blends creamy peanut butter with delightful peanut chunks, offering a satisfying crunch. Perfect on toast, smoothies, or as a snack.",
+        "nutrition_facts": {
+            "ingredients": ["Peanuts", "Salt"],
+            "serving_size": "2 tbsp (32g)",
+            "calories": 190,
+            "total_fat": {
+                "value": 16,
+                "percent": 25
+            },
+            "cholesterol": {
+                "value": 0,
+                "percent": 0
+            },
+            "sodium": {
+                "value": 150,
+                "percent": 6
+            },
+            "total_carbohydrate": {
+                "value": 7,
+                "percent": 2
+            },
+            "dietary_fiber": {
+                "value": 2,
+                "percent": 8
+            },
+            "sugars": {
+                "value": 3,
+                "percent": 0
+            },
+            "protein": {
+                "value": 8,
+                "percent": 16
+            }
+        }
+    },
+    {
+        "id": 3,
+        "name": "Peanut Butter Gift Set",
+        "price": "RM59",
+        "image": "/img/peanut-butter-gift-set.png",
+        "description": "Gift the ultimate peanut butter experience with our exclusive Peanut Butter Gift Set, featuring a variety of best-selling flavors, perfect for any occasion."
+    },
+    {
+        "id": 4,
+        "name": "Smooth Almond Butter",
+        "price": "RM25",
+        "image": "/img/almond butter jar.png",
+        "description": "Indulge in the smoothness of our Almond Butter, made from premium roasted almonds. Perfect for spreading on toast, adding to recipes, or enjoying straight from the jar.",
+        "nutrition_facts": {
+            "ingredients": ["Almonds", "Salt"],
+            "serving_size": "2 tbsp (32g)",
+            "calories": 190,
+            "total_fat": {
+                "value": 17,
+                "percent": 26
+            },
+            "cholesterol": {
+                "value": 0,
+                "percent": 0
+            },
+            "sodium": {
+                "value": 60,
+                "percent": 3
+            },
+            "total_carbohydrate": {
+                "value": 6,
+                "percent": 2
+            },
+            "dietary_fiber": {
+                "value": 3,
+                "percent": 12
+            },
+            "sugars": {
+                "value": 1,
+                "percent": 0
+            },
+            "protein": {
+                "value": 6,
+                "percent": 12
+            }
+        }
+    },
+    {
+        "id": 5,
+        "name": "Chunky Almond Butter",
+        "price": "RM26",
+        "image": "/img/almond butter jar.png",
+        "description": "Our Chunky Almond Butter combines a creamy base with pieces of real roasted almonds. Perfect for adding texture to toast, smoothies, or baked goods.",
+        "nutrition_facts": {
+            "ingredients": ["Almonds", "Salt"],
+            "serving_size": "2 tbsp (32g)",
+            "calories": 200,
+            "total_fat": {
+                "value": 18,
+                "percent": 28
+            },
+            "cholesterol": {
+                "value": 0,
+                "percent": 0
+            },
+            "sodium": {
+                "value": 65,
+                "percent": 3
+            },
+            "total_carbohydrate": {
+                "value": 7,
+                "percent": 2
+            },
+            "dietary_fiber": {
+                "value": 3,
+                "percent": 12
+            },
+            "sugars": {
+                "value": 2,
+                "percent": 0
+            },
+            "protein": {
+                "value": 7,
+                "percent": 14
+            }
+        }
+    },
+    {
+        "id": 6,
+        "name": "Smooth Pistachio Butter",
+        "price": "RM24",
+        "image": "/img/pistachio butter jar.png",
+        "description": "Discover the luxurious taste of our Smooth Pistachio Butter, made from the finest pistachios. Perfect for gourmet uses or as a delicious standalone snack.",
+        "nutrition_facts": {
+            "ingredients": ["Pistachios", "Salt"],
+            "serving_size": "2 tbsp (32g)",
+            "calories": 190,
+            "total_fat": {
+                "value": 17,
+                "percent": 26
+            },
+            "cholesterol": {
+                "value": 0,
+                "percent": 0
+            },
+            "sodium": {
+                "value": 70,
+                "percent": 3
+            },
+            "total_carbohydrate": {
+                "value": 8,
+                "percent": 3
+            },
+            "dietary_fiber": {
+                "value": 3,
+                "percent": 12
+            },
+            "sugars": {
+                "value": 2,
+                "percent": 0
+            },
+            "protein": {
+                "value": 6,
+                "percent": 12
+            }
+        }
+    },
+    {
+        "id": 7,
+        "name": "Smooth Cashew Butter",
+        "price": "RM22",
+        "image": "/img/cashew butter jar.png",
+        "description": "Our Smooth Cashew Butter is a creamy treat made from premium cashews, perfect for spreading, incorporating into recipes, or enjoying straight from the jar.",
+        "nutrition_facts": {
+            "ingredients": ["Cashews", "Salt"],
+            "serving_size": "2 tbsp (32g)",
+            "calories": 180,
+            "total_fat": {
+                "value": 14,
+                "percent": 22
+            },
+            "cholesterol": {
+                "value": 0,
+                "percent": 0
+            },
+            "sodium": {
+                "value": 120,
+                "percent": 5
+            },
+            "total_carbohydrate": {
+                "value": 9,
+                "percent": 3
+            },
+            "dietary_fiber": {
+                "value": 1,
+                "percent": 4
+            },
+            "sugars": {
+                "value": 2,
+                "percent": 0
+            },
+            "protein": {
+                "value": 5,
+                "percent": 10
+            }
+        }
+    },
+    {
+        "id": 8,
+        "name": "Chunky Cashew Butter",
+        "price": "RM23",
+        "image": "/img/cashew butter jar.png",
+        "description": "Enjoy the best of both worlds with our Chunky Cashew Butter, featuring a creamy base with crunchy pieces of cashew. Perfect for spreading, recipes, or as a snack.",
+        "nutrition_facts": {
+            "ingredients": ["Cashews", "Salt"],
+            "serving_size": "2 tbsp (32g)",
+            "calories": 190,
+            "total_fat": {
+                "value": 15,
+                "percent": 23
+            },
+            "cholesterol": {
+                "value": 0,
+                "percent": 0
+            },
+            "sodium": {
+                "value": 125,
+                "percent": 5
+            },
+            "total_carbohydrate": {
+                "value": 10,
+                "percent": 3
+            },
+            "dietary_fiber": {
+                "value": 1,
+                "percent": 4
+            },
+            "sugars": {
+                "value": 2,
+                "percent": 0
+            },
+            "protein": {
+                "value": 6,
+                "percent": 12
+            }
+        }
+    }
+]

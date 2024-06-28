@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shopping Cart Page</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/cartstyle.css">
+  <link rel="stylesheet" href="/css/sharedstyle.css">
+</head>
+
+<body>
+  <div id="trailer"></div>
+  <!--Navigation bar-->
+  <div class="container-fluid header-container">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="brand">
+        <h1>Spreads</h1>
+        <img class="icon" src="/img/logo.png" alt="jar icon">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="show_product.php" id="navbarDropdown" role="button"
+              aria-haspopup="true" aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="show_product.php">Peanut Butter</a>
+              <a class="dropdown-item" href="show_product.php">Almond Butter</a>
+              <a class="dropdown-item" href="show_product.php">Pistachio Butter</a>
+              <a class="dropdown-item" href="show_product.php">Cashew Butter</a>
+              <a class="dropdown-item" href="show_product.php">Gift Set</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+          <li class="nav-item"><a class="cart" href="cart.html"><img src="/img/cart.png" class="avatar"></a></li>
+          <li class="nav-item"><a class="user" href="login.html"><img src="/img/user.png" class="avatar"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="quick-nav">
+    <a href="index.html">Home</a>
+    <p>&gt</p>
+    <p>Shopping Cart</p>
+  </div>
+  <!--Shopping Cart-->
+  <section>
+    <div class="container">
+      <h1 class="title">Shopping Cart</h1>
+      <div class="row">
+        <table id="shoppingCart" class="table">
+          <thead>
+            <tr>
+              <th class="product-column">Product</th>
+              <th class="small-column">Price</th>
+              <th class="small-column">Quantity</th>
+              <th class="small-column"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product">
+                <div class="row">
+                  <div class="col-md-3 text-left">
+                    <img src="/img/peanut butter jar.png" class="img-fluid">
+                  </div>
+                  <div class="col-md-9 text-left mt-sm-2">
+                    <p class="productname">Smooth Peanut Butter</p>
+                  </div>
+                </div>
+              </td>
+              <td class="price">RM20</td>
+              <td class="quantity">
+                <input type="number" class="form-control text-center" value="1" min="1">
+              </td>
+              <td class="action text-center">
+                <button class="btn btn-sm">
+                  <img src="/img/remove.png" alt="Remove">
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a href="checkout.html"><button class="btn-lg btn-block checkout">Checkout</button></a>
+    </div>
+  </section>
+
+  <!--Contact form & Footer-->
+  <footer class="bg-body-tertiary text-lg-start" style="background-color: #f1e2c5">
+    <div class="row">
+      <div class="col-8">
+        <form class="contact-form" method="post" action="post_message.php" id="contact">
+          <div class="form-title">
+            <h5 id="contact-us">CONTACT</h5>
+            <h6>US</h6>
+          </div>
+          <div class="form-body-item">
+            <div class="form-group">
+              <input type="text" id="name" class="input" placeholder="NAME" name="username" required>
+              <input type="email" id="email" class="input" placeholder="EMAIL" name="email" required>
+              <input type="text" id="message" class="input" placeholder="MESSAGE" name="message" required>
+              <button type="submit" form="contact" value="Submit">Send</button>
+            </div>
+          </div>
+        </form>
+        <div class="copyright text-center">
+          © 2024 Copyright:
+          <a class="text-body" href="index.html">Spreads.com</a>
+        </div>
+
+      </div>
+      <div class="col-4">
+        <img src="/img/form-image.png" alt="spreads image">
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
