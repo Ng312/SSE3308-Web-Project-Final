@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "localhost:3306";
 $username = "root";
 $password = "";
 $dbname = "sse3308";
@@ -94,7 +94,7 @@ $conn = null; // Close the connection
 
     <!-- Add New Product Button -->
     <div class="button-container">
-        <a href="add_show_product.php" class="btn btn-warning">Manage Products</a>
+        <a href="add_product.php" class="btn btn-warning">Manage Products</a>
     </div>
 
     <!--Contact form & Footer-->

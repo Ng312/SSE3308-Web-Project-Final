@@ -53,7 +53,7 @@
             error_reporting(E_ALL);
            
             
-            $servername = "localhost:3307";
+            $servername = "localhost:3306";
             $username = "root";
             $password = "";
             $dbname = "sse3308";

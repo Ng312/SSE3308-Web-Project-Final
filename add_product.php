@@ -106,10 +106,10 @@ if (isset($_GET['delete'])) {
     $stmt = $conn->prepare($delete_query);
     $stmt->bind_param("i", $delete_id);
     if ($stmt->execute()) {
-        header('location:add_show_product.php');
+        header('location:add_product.php');
         $message[] = 'Product has been deleted';
     } else {
-        header('location:add_show_product.php');
+        header('location:add_product.php');
         $message[] = 'Product could not be deleted';
     }
     $stmt->close();
@@ -273,9 +273,9 @@ if (isset($message)) {
                <td><?php echo $row['name']; ?></td>
                <td><?php echo $row['price']; ?></td>
                <td>
-                  <a href="add_show_product.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this?');">Delete</a>
+                  <a href="add_product.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this?');">Delete</a>
                   <!-- Update link-->
-                  <a href="add_show_product.php?edit=<?php echo $row['id']; ?>" class="btn btn-primary">Update</a>
+                  <a href="add_product.php?edit=<?php echo $row['id']; ?>" class="btn btn-primary">Update</a>
                </td>
             </tr>
             <?php

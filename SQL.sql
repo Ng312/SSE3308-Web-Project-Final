@@ -119,14 +119,65 @@ INSERT INTO `status_updates` (`id`, `username`, `status`, `timestamp`) VALUES
 --
 
 CREATE TABLE `users` (
-  `name` varchar(128) DEFAULT NULL,
-  `email` varchar(128) DEFAULT NULL
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `email`) VALUES
+(4, 'hwei625', '$2y$10$G/NWU7ou.pV0cI2nUeclPeIDxf7SYCd37I5iShRqKGGSJrPYt3HZC', 'hwei625@gmail.com'),
+(5, 'abc', '$2y$10$jZaV/VUCmQU3QGiHJQxCIuSuQPzV.USUoYpvhnWTvftVav1yrZm.i', 'abc@dhong.xyz');
 
 --
 -- Indexes for dumped tables
 --
 
+--
+-- Indexes for table `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `status_updates`
+--
+ALTER TABLE `status_updates`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `status_updates`
+--
+ALTER TABLE `status_updates`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- Indexes for table `product_info`
 --
