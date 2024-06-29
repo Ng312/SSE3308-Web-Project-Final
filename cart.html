@@ -60,6 +60,7 @@
         <table id="shoppingCart" class="table">
           <thead>
             <tr>
+              <th class="small-column"></th>
               <th class="product-column">Product</th>
               <th class="small-column">Price</th>
               <th class="small-column">Quantity</th>
@@ -68,6 +69,9 @@
           </thead>
           <tbody>
             <tr>
+              <td class="checkbox">
+                <input type="checkbox" name="selected-product" value="Smooth Peanut Butter">
+              </td>
               <td class="product">
                 <div class="row">
                   <div class="col-md-3 text-left">
@@ -88,12 +92,61 @@
                 </button>
               </td>
             </tr>
+            <tr>
+              <td class="checkbox">
+                <input type="checkbox" name="selected-product" value="Pistachio Butter">
+              </td>
+              <td class="product">
+                <div class="row">
+                  <div class="col-md-3 text-left">
+                    <img src="/img/pistachio butter jar.png" class="img-fluid">
+                  </div>
+                  <div class="col-md-9 text-left mt-sm-2">
+                    <p class="productname">Pistachio Butter</p>
+                  </div>
+                </div>
+              </td>
+              <td class="price">RM24</td>
+              <td class="quantity">
+                <input type="number" class="form-control text-center" value="1" min="1">
+              </td>
+              <td class="action text-center">
+                <button class="btn btn-sm">
+                  <img src="/img/remove.png" alt="Remove">
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="checkbox">
+                <input type="checkbox" name="selected-product" value="Chunky Almond Butter">
+              </td>
+              <td class="product">
+                <div class="row">
+                  <div class="col-md-3 text-left">
+                    <img src="/img/almond butter jar.png" class="img-fluid">
+                  </div>
+                  <div class="col-md-9 text-left mt-sm-2">
+                    <p class="productname">Chunky Almond Butter</p>
+                  </div>
+                </div>
+              </td>
+              <td class="price">RM26</td>
+              <td class="quantity">
+                <input type="number" class="form-control text-center" value="1" min="1">
+              </td>
+              <td class="action text-center">
+                <button class="btn btn-sm">
+                  <img src="/img/remove.png" alt="Remove">
+                </button>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
       <a href="checkout.html"><button class="btn-lg btn-block checkout">Checkout</button></a>
     </div>
   </section>
+  
 
   <!--Contact form & Footer-->
   <footer class="bg-body-tertiary text-lg-start" style="background-color: #f1e2c5">
